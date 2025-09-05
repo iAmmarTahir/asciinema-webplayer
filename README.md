@@ -1,70 +1,95 @@
-# Getting Started with Create React App
+# 🎥 Asciinema Webplayer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple React web app that lets you **upload and play `.cast` terminal recordings** directly in your browser using the [asciinema-player](https://www.npmjs.com/package/asciinema-player) library.
 
-## Available Scripts
+![demo](https://asciinema.org/a/335335.svg) <!-- replace with your own demo cast if available -->
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## ✨ Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Upload a `.cast` file from your computer (drag & drop or file picker).
+- Play the recording client-side — your file never leaves the browser.
+- Playback controls:
+  - Autoplay
+  - Loop
+  - Playback speed
+  - Themes (`asciinema`, `tango`, `monokai`, `solarized-dark`, `solarized-light`)
+  - Fit modes (`both`, `width`, `height`, `none`)
+- Adjustable player height to fit screen.
+- Inline CSS styles (no external frameworks required).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🚀 Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 1. Clone the repo
+```bash
+git clone https://github.com/<your-username>/<your-repo>.git
+cd <your-repo>
+```
 
-### `npm run build`
+### 2. Install dependencies
+```bash
+npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 3. Run the dev server
+```bash
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Visit [http://localhost:3000](http://localhost:3000).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🛠 Tech Stack
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- [React](https://react.dev/) — UI framework
+- [asciinema-player](https://www.npmjs.com/package/asciinema-player) — terminal recording player
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📂 Project Structure
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+.
+├── src/
+│   ├── App.jsx          # Main React component
+│ 
+├── index.html           # HTML shell
+├── package.json
+└── README.md
+```
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🖼 Usage
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Drag and drop a `.cast` file (or select one using the file input).
+2. The recording will load instantly into the embedded Asciinema player.
+3. Use the playback options panel to tweak speed, theme, fit, and looping.
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📸 Demo `.cast` Files
 
-### Analyzing the Bundle Size
+You can create `.cast` recordings with [asciinema](https://asciinema.org/):
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+asciinema rec demo.cast
+```
 
-### Making a Progressive Web App
+Then upload `demo.cast` into this app to play it back.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Pull requests are welcome! If you’d like to add features (e.g., saving playback settings, sharing recordings), open an issue first to discuss.
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 📜 License
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[MIT](LICENSE)
