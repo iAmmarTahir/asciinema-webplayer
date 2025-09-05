@@ -2,6 +2,8 @@
 
 A simple React web app that lets you **upload and play `.cast` terminal recordings** directly in your browser using the [asciinema-player](https://www.npmjs.com/package/asciinema-player) library.
 
+## Demo
+https://asciinema-webplayer.netlify.app/
 
 ---
 
